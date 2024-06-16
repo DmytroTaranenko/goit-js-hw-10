@@ -1,25 +1,132 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+.timer {
+  display: flex;
+  gap: 20px;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+.field {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-size: 30px;
+}
+
+.label {
+  display: block;
+  font-size: 20px;
+}
+
+#datetime-picker {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  outline: transparent;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+#datetime-picker:active {
+  border: 1px solid #4e75ff;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #6c8cff;
+}
+
+.btn.js-disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.form-label {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.form-input {
+  margin-left: 30px;
+  display: block;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  outline: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.state-field {
+  display: flex;
+  gap: 48px;
+  margin-top: 16px;
+  margin-left: 30px;
+  width: 338px;
+  height: 40px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  outline: transparent;
+}
+
+.state-label {
+  padding-left: 48px;
+}
+.radio-check {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.state-btn {
+  margin-top: 26px;
+  margin-left: 30px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: transparent;
+}
+
+.state-btn:hover {
+  background-color: #6c8cff;
 }
